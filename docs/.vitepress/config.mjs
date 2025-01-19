@@ -10,12 +10,13 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '章节', link: '/ch1' }
+      { text: '章节', link: '/README' }
     ],
 
     sidebar: [
       {
         text: '目录',
+        link: '/README',
         items: [
           { text: '第 1 章 焦油坑', link: '/ch1' },
           { text: '第 2 章 人月神话', link: '/ch2' },
