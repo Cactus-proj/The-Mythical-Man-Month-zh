@@ -2,7 +2,7 @@
 
 《人月神话》中文翻译
 
-在线阅读：
+在线阅读： https://cactus-proj.github.io/The-Mythical-Man-Month-zh/
 
 
 ## 目录
@@ -29,9 +29,9 @@
 
 ## 本地开发 & 阅读
 
-本项目基于 vuepress 进行开发，以提供比 github markdown 更佳的阅读体验
+本项目基于 vitepress 进行开发，以提供比 github markdown 更佳的阅读体验
 
-依赖于 `node.js`、`yarn`、`vuepress` 等环境
+依赖于 `node.js` 等环境
 
 ```sh
 # 本地开发
