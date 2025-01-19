@@ -45,6 +45,9 @@ export default defineConfig({
       pattern: 'https://github.com/Cactus-proj/The-Mythical-Man-Month-zh/edit/main/docs/:path'
     },
     lastUpdated: true,
+    search: {
+      provider: 'local'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Cactus-proj/The-Mythical-Man-Month-zh' }
     ]
