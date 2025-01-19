@@ -2,13 +2,15 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "The Mythical an-Month zh",
-  description: "Chinese translation of The Mythical Man-Month",
+  lang: 'zh-CN',
+  title: "《人月神话》中文版",
+  description: "《The Mythical Man-Month》的中文翻译",
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '章节', link: '/ch1' }
     ],
 
     sidebar: [
@@ -39,7 +41,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Cactus-proj/The-Mythical-Man-Month-zh' }
     ]
   }
 })
