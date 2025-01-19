@@ -2,7 +2,7 @@
 
 《人月神话》中文翻译
 
-在线阅读：[http://gdut_yy.gitee.io/doc-tmmm/](http://gdut_yy.gitee.io/doc-tmmm/)
+在线阅读：
 
 
 ## 目录
@@ -34,13 +34,11 @@
 依赖于 `node.js`、`yarn`、`vuepress` 等环境
 
 ```sh
-# vuepress
-yarn global add vuepress
-
 # 本地开发
 git clone https://github.com/gdut-yy/The-Mythical-Man-Month-zh.git
 cd The-Mythical-Man-Month-zh/
-yarn docs:dev
+npm install
+npm run docs:dev
 ```
 
 ## License

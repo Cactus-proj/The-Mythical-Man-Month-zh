@@ -1,2 +1,6 @@
 node_modules/
-docs/.vuepress/dist/
+
+docs/.vitepress/dist
+docs/.vitepress/cache
+
+bun.lockb

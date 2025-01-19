@@ -1,6 +1,11 @@
 {
+  "dependencies": {},
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  },
   "scripts": {
-    "docs:dev": "vuepress dev docs --open --host 127.0.0.1",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vitepress dev docs --open --host 127.0.0.1",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   }
 }
