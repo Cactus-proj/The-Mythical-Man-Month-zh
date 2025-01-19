@@ -6,6 +6,8 @@ export default defineConfig({
   title: "《人月神话》中文版",
   description: "《The Mythical Man-Month》的中文翻译",
 
+  // 部署
+  base: '/The-Mythical-Man-Month-zh/',
   sitemap: {
     hostname: 'https://cactus-proj.github.io/The-Mythical-Man-Month-zh/'
   },
