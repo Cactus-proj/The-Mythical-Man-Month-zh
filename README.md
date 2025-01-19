@@ -1,4 +1,4 @@
-# The-Mythical-Man-Month-zh
+# The Mythical Man-Month zh
 
 《人月神话》中文翻译
 
