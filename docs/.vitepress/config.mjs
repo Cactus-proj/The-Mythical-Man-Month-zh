@@ -6,6 +6,9 @@ export default defineConfig({
   title: "《人月神话》中文版",
   description: "《The Mythical Man-Month》的中文翻译",
 
+  sitemap: {
+    hostname: 'https://cactus-proj.github.io/The-Mythical-Man-Month-zh/'
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
