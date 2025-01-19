@@ -1,0 +1,25 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install and Build   
+        run: |
+          npm install
+          npm run docs:build
+      - name: Deploy  
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          branch: gh-pages
+          folder: docs/.vitepress/dist
