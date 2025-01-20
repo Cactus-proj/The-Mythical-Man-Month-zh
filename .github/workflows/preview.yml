@@ -1,4 +1,4 @@
-name: site-preview
+name: PR Preview
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy-preview:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
