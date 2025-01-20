@@ -67,9 +67,11 @@ John Harr，Bell 电话实验室电子交换系统领域的编程经理，在 19
 
 图 8.3 和 8.4 显示了一些有趣的数据，将实际的编程速度、调试速度与预期做了对比。
 
-<Figures figure="8-2"></Figures>
+![](figures/fg8-2.jpg)
+> 图 8.2
 
-<Figures figure="8-3"></Figures>
+![](figures/fg8-3.jpg)
+> 图 8.3
 
 ## OS/360 的数据
 
