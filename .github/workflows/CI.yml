@@ -1,12 +1,15 @@
-name: Build and Deploy
+name: CI
 
 on:
   push:
     branches:
     - main
-  pull_request:
-    branches:
-    - main
+  workflow_dispatch:
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
@@ -17,9 +20,8 @@ jobs:
         run: |
           npm install
           npm run docs:build
-      - name: Deploy  
+      - name: Deploy (main)
         uses: JamesIves/github-pages-deploy-action@v4
-        if: github.ref == 'refs/heads/main'
         with:
           branch: gh-pages
           folder: docs/.vitepress/dist
