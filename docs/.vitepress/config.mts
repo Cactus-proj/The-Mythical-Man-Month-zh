@@ -2,12 +2,17 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  lang: 'zh-CN',
   title: "《人月神话》中文版",
-  description: "《The Mythical Man-Month》的中文翻译",
-
-  // 部署
+  // meta 标签 <= 80 中文字符
+  description: "人月神话：软件项目管理之道 (40周年中文纪念版) 布鲁克斯"
+  + "; The Mythical Man-Month 中文翻译"
+  + "; 人月神話：軟體專案管理之道 (20週年紀念版)"
+  ,
+  lang: 'zh-CN',
   base: '/The-Mythical-Man-Month-zh/',
+
+  lastUpdated: true,
+  // https://vitepress.dev/zh/guide/sitemap-generation#options
   sitemap: {
     hostname: 'https://cactus-proj.github.io/The-Mythical-Man-Month-zh/'
   },
@@ -15,13 +20,12 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '章节', link: '/README' }
+      { text: '章节正文', link: '/ch1' }
     ],
 
     sidebar: [
       {
         text: '目录',
-        link: '/README',
         items: [
           { text: '第 1 章 焦油坑', link: '/ch1' },
           { text: '第 2 章 人月神话', link: '/ch2' },
@@ -46,15 +50,15 @@ export default defineConfig({
       }
     ],
 
-    editLink: {
-      pattern: 'https://github.com/Cactus-proj/The-Mythical-Man-Month-zh/edit/main/docs/:path'
-    },
-    lastUpdated: true,
     search: {
       provider: 'local'
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Cactus-proj/The-Mythical-Man-Month-zh' }
-    ]
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/Cactus-proj/The-Mythical-Man-Month-zh/edit/main/docs/:path'
+    },
   }
 })

@@ -1,6 +1,6 @@
-# The Mythical Man-Month zh
+# 《人月神话》中文翻译
 
-《人月神话》中文翻译
+[![CI](https://github.com/Cactus-proj/The-Mythical-Man-Month-zh/actions/workflows/CI.yml/badge.svg)](https://github.com/Cactus-proj/The-Mythical-Man-Month-zh/actions/workflows/CI.yml)
 
 在线阅读： https://cactus-proj.github.io/The-Mythical-Man-Month-zh/
 
@@ -27,19 +27,23 @@
 - [第 18 章 《人月神话》的观点：是或非？](docs/ch18.md)
 - [第 19 章 20 年后的人月神话](docs/ch19.md)
 
+
 ## 本地开发 & 阅读
 
-本项目基于 vitepress 进行开发，以提供比 github markdown 更佳的阅读体验
+本项目基于 VitePress 进行开发，以提供比 Github Mardown 更佳的阅读体验
 
-依赖于 `node.js` 等环境
+依赖于 [`node.js`][nodejs]、[`vitepress`][vitepress] 等环境
+
+[nodejs]: https://nodejs.org/zh-cn/
+[vitepress]: https://vitepress.dev/zh/
 
 ```sh
-# 本地开发
 git clone https://github.com/gdut-yy/The-Mythical-Man-Month-zh.git
 cd The-Mythical-Man-Month-zh/
-npm install
-npm run docs:dev
+npm install         # 安装 VitePress
+npm run docs:dev    # 编译并打开网页预览
 ```
+
 
 ## License
 
@@ -47,4 +51,4 @@ npm run docs:dev
 - 对于书籍内容，原作者保留所有权利
 - 对于中文翻译以及其他的项目文件，按照 [MIT](./LICENSE) 协议授权
 
-NOTE: 由于是未授权翻译，中文翻译文本的版权不明确，因此本项目仅作维护性更新.
+NOTE: 由于是未授权翻译，中文翻译文本的版权不明确，因此本项目仅作维护性更新（保持CI可用）。
