@@ -38,7 +38,7 @@
 [vitepress]: https://vitepress.dev/zh/
 
 ```sh
-git clone https://github.com/gdut-yy/The-Mythical-Man-Month-zh.git
+git clone hhttps://github.com/Cactus-proj/The-Mythical-Man-Month-zh.git
 cd The-Mythical-Man-Month-zh/
 npm install         # 安装 VitePress
 npm run docs:dev    # 编译并打开网页预览
